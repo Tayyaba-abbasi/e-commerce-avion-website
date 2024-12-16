@@ -30,9 +30,9 @@ const MobileNav = () => {
       </div>
 
       {/* Center - Website Name */}
-      <div className="text-zinc-800 text-xl font-normal font-['Clash Display']">
-        Avion
-      </div>
+      <Link href="/" className="text-zinc-800 text-2xl font-normal font-['Clash Display'] cursor-pointer">
+          Avion
+        </Link>
 
       {/* Right - Hamburger Menu */}
       <div className="flex items-center gap-4">
