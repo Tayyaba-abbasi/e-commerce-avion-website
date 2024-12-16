@@ -23,7 +23,7 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <header className="flex md:hidden items-center justify-between bg-white px-4 py-3 shadow-md">
+    <header className="flex md:hidden items-center justify-between bg-white px-4 py-3 sticky top-0 z-10 shadow-md">
       {/* Left - Search Icon */}
       <div>
         <FaSearch className="text-xl text-zinc-800" />
