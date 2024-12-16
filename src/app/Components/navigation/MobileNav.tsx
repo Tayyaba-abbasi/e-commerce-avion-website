@@ -36,7 +36,9 @@ const MobileNav = () => {
 
       {/* Right - Hamburger Menu */}
       <div className="flex items-center gap-4">
-        <FaCartShopping className="text-xl text-zinc-800" />
+        <Link href="/Cart">
+             <FaCartShopping className="text-xl text-zinc-800 cursor-pointer" />
+          </Link>
         <FaRegUserCircle className="text-xl text-zinc-800" />
         <FaBars
           className="text-xl text-zinc-800 cursor-pointer"
