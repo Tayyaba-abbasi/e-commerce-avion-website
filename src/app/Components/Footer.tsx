@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaPinterest, FaSkype, FaTwitter } from 'react-icons/fa';
 
@@ -51,7 +52,7 @@ const Footer = () => {
                 placeholder="Send your email"
                 className="w-full bg-white/20 font-[satoshi] rounded border border-gray-300 text-indigo-950 py-2 px-3 mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <button className="w-full sm:w-auto bg-white text-indigo-950 font-[satoshi] py-2 px-6 rounded">
+              <button className="w-full sm:w-auto bg-white hover:bg-indigo-600 text-indigo-950 hover:text-white font-[satoshi] py-2 px-6 rounded">
                 Sign up
               </button>
             </div>
@@ -65,7 +66,6 @@ const Footer = () => {
           <div className="flex space-x-4 mt-4 sm:mt-0">
             <FaLinkedin className="w-5 h-5" />
             <FaFacebookSquare className="w-5 h-5" />
-            <FaInstagram className="w-5 h-5" />
             <FaSkype className="w-5 h-5" />
             <FaTwitter className="w-5 h-5" />
             <FaPinterest className="w-5 h-5" />

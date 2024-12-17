@@ -1,9 +1,10 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
+import Link from 'next/link';
 
 const Ceramics = () => {
   return (
-    
+    <div id='Ceramics'>
       <section className="container px-5 mx-auto">
         <div className="px-4 md:px-8 py-12 text-indigo-950 mt-12">
           {/* Title */}
@@ -74,14 +75,16 @@ const Ceramics = () => {
 
           {/* View Collection Button */}
           <div className="my-10 flex justify-center items-center">
-            <button className="bg-stone-50 border py-4 px-6 rounded-[5px] text-indigo-950  font-['Satoshi']">
-              View collection
-            </button>
+            <Link href="/productlisting">
+              <button className="bg-stone-50 border py-4 px-6 rounded-[5px] hover:bg-slate-400 text-indigo-950 font-['Satoshi']">
+                View collection
+              </button>
+            </Link>
           </div>
         </div>
       </section>
-    
-  )
-}
+    </div>
+  );
+};
 
 export default Ceramics;

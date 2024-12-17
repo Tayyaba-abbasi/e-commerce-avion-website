@@ -68,7 +68,7 @@ const PopularProducts = () => {
 
           {/* View Collection Button */}
           <div className='my-10 flex justify-center items-center'>
-            <button className='bg-[#F9F9F9] font-[Satoshi] py-4 px-6 rounded-[5px] text-indigo-950' onClick={handleNavigation}>
+            <button className='bg-[#F9F9F9] border font-[Satoshi] py-4 px-6 rounded-[5px] hover:bg-slate-400 text-indigo-950' onClick={handleNavigation}>
               View collection
             </button>
           </div>

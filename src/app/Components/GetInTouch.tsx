@@ -23,7 +23,7 @@ const GetInTouch = () => {
                 </h1>
               </div>
               <div className="my-10">
-                <button className="bg-stone-50 py-4 px-4 rounded-[5px] text-indigo-950 font-[satoshi]">
+                <button className="bg-stone-50 border hover:bg-stone-400 py-4 px-4 rounded-[5px] text-indigo-950 font-[satoshi]">
                   Get in touch
                 </button>
               </div>

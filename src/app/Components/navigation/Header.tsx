@@ -12,41 +12,47 @@ const Header = () => {
         <div className="flex items-center">
           <FaSearch className="text-xl text-zinc-800" />
         </div>
-        <div className="text-zinc-800 text-2xl font-normal font-['Clash Display']">
+        <Link href="/" className="text-zinc-800 text-2xl font-normal font-['Clash Display'] cursor-pointer">
           Avion
-        </div>
+        </Link>
         <div className="flex items-center gap-4">
-          <FaRegUserCircle className="text-xl text-zinc-800" />
-          <FaCartShopping className="text-xl text-zinc-800" />
+          <FaRegUserCircle className="text-xl text-zinc-800 cursor-pointer" />
+          <Link href="/Cart">
+            
+              <FaCartShopping className="text-xl text-zinc-800 cursor-pointer" />
+            
+          </Link>
         </div>
       </div>
-      <div className="w-full h-px border border-black/10"></div>
+      <hr className=" border-black/10"/>
 
-      {/* Bottom Section - Navbar Links */}
-      <ul className="flex justify-center items-center gap-6 mt-2">
+      <nav className="flex justify-center items-center mt-2">
+
+      <ul className="text-slate-600 flex gap-6 font-normal font-['Satoshi']">
         {/* Navigation Links */}
-        <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/plant-pots">Plant pots</Link>
+        <li className=" hover:underline">
+            <Link href="/">Plant pots</Link>
             </li>
-            <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/ceramics">Ceramics</Link>
+            <li className=" hover:underline">
+            <Link href={"#Ceramics"}>Ceramics</Link>
             </li>
-            <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/tables">Tables</Link>
+            <li className=" hover:underline">
+            <Link href="/">Tables</Link>
             </li>
-            <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/chairs">Chairs</Link>
+            <li className="hover:underline">
+            <Link href="/">Chairs</Link>
             </li>
-            <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/crockery">Crockery</Link>
+            <li className=" hover:underline">
+            <Link href="/">Crockery</Link>
             </li>
-            <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/table-ware">Table ware</Link>
+            <li className=" hover:underline">
+            <Link href="/">Table ware</Link>
             </li>
-            <li className="text-slate-500 text-base font-normal font-['Satoshi'] hover:underline">
-            <Link href="/cutlery">Cutlery</Link>
+            <li className=" hover:underline">
+            <Link href="/">Cutlery</Link>
             </li>
       </ul>
+      </nav>
     </header>
   );
 };
