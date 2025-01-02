@@ -5,7 +5,7 @@ import {  FaCartShopping } from 'react-icons/fa6';
 
 const Header = () => {
   return (
-    <header className="hidden md:flex flex-col bg-white container px-5 mx-auto ">
+    <header className="hidden md:flex flex-col bg-white container px-5 mx-auto sticky top-0 z-10 ">
       {/* Top Section */}
       <div className="flex items-center justify-between px-6 py-4">
         {/* Left - Search Icon */}

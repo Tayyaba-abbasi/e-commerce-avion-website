@@ -23,20 +23,22 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <header className="flex md:hidden items-center justify-between bg-white px-4 py-3 shadow-md">
+    <header className="flex md:hidden items-center justify-between bg-white px-4 py-3 sticky top-0 z-10 shadow-md">
       {/* Left - Search Icon */}
       <div>
         <FaSearch className="text-xl text-zinc-800" />
       </div>
 
       {/* Center - Website Name */}
-      <div className="text-zinc-800 text-xl font-normal font-['Clash Display']">
-        Avion
-      </div>
+      <Link href="/" className="text-zinc-800 text-2xl font-normal font-['Clash Display'] cursor-pointer">
+          Avion
+        </Link>
 
       {/* Right - Hamburger Menu */}
       <div className="flex items-center gap-4">
-        <FaCartShopping className="text-xl text-zinc-800" />
+      <Link href="/Cart">
+             <FaCartShopping className="text-xl text-zinc-800 cursor-pointer" />  
+        </Link>
         <FaRegUserCircle className="text-xl text-zinc-800" />
         <FaBars
           className="text-xl text-zinc-800 cursor-pointer"
